@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.ellipse {
+  position: absolute;
+  width: 585px;
+  height: 585px;
+  border: 1px solid #008000;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.iconFilling {
+  position: absolute;
+}
+
+#moneyBag {
+  left: 68%;
+  top: 144px;
+}
+
+#star {
+  left: 20%;
+  top: 389px;
+}
+
+#ellipse {
+  left: 77%;
+  top: 429px;
+}
+
+#naira {
+  left: 91%;
+  top: 377px;
+}
+
+#dollar {
+  left: 8%;
+  top: 692px;
+}
+
+#borderEllipse {
+  left: 29%;
+  top: 767px;
+}
+
+#borderStar {
+  left: 77%;
+  top: 776px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 150px 0 150px;
+}
+.header * {
+  font-family: "Lato", sans-serif;
+}
+.header .logo {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #263238;
+}
+.header .link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.header .link .linkElement {
+  margin-right: 44px;
+}
+.header .link .linkElement:last-child {
+  margin-right: 0;
+}
+.header .link .scroll {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238;
+  text-decoration: none;
+}
+.header .mode {
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #263238;
+  margin-bottom: 70px;
+}
+.title .selection {
+  color: #008000;
+}
+
+.tagline {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #263238;
+}
+
+.input {
+  width: 533px;
+  height: 76px;
+  background: rgba(38, 50, 56, 0.1);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #263238;
+  padding-left: 25px;
+}
+
+.button {
+  background-color: #008000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 0 250px;
+}
+.wrapper .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 125px 0;
+}
+.wrapper .about .tagline {
+  width: 725px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.wrapper .about .getStart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wrapper .about .getStart .button {
+  position: absolute;
+  right: 6px;
+  padding: 22px 25px;
+}
+.wrapper .works {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper .works .info {
+  width: 574px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .works .info .title {
+  text-align: start;
+}
+.wrapper .works .card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 128, 0, 0.05);
+  border-radius: 20px;
+  padding: 166px 45px;
+}
+.wrapper .works .card .ellipse-bottom {
+  left: 317.3px;
+}
+.wrapper .works .card .ellipse-top {
+  left: 320.42px;
+}
+.wrapper .ellipse-bottom {
+  left: -171px;
+  top: -206px;
+}
+.wrapper .ellipse-top {
+  left: -116px;
+  top: -261px;
+}
+
+/*# sourceMappingURL=index.css.map */

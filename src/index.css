@@ -105,7 +105,8 @@ body {
   color: #263238;
   margin-bottom: 70px;
 }
-.title .selection {
+
+.selection {
   color: #008000;
 }
 
@@ -166,32 +167,100 @@ body {
   right: 6px;
   padding: 22px 25px;
 }
-.wrapper .works {
+.wrapper .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
-.wrapper .works .info {
+.wrapper .container .info {
   width: 574px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.wrapper .works .info .title {
+.wrapper .container .info .title {
   text-align: start;
 }
-.wrapper .works .card {
+.wrapper .container .info .tagline {
+  margin-bottom: 25px;
+}
+.wrapper .container .info .powers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper .container .info .powers .powersItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 490px;
+  margin-bottom: 48px;
+}
+.wrapper .container .info .powers .powersItem .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: rgba(0, 128, 0, 0.1);
+  margin-right: 35px;
+}
+.wrapper .container .info .powers .powersItem .icon img {
+  width: 54px;
+  height: 54px;
+}
+.wrapper .container .info .powers .powersItem .description {
+  width: 335px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #263238;
+}
+.wrapper .container .card {
   position: relative;
   overflow: hidden;
   background: rgba(0, 128, 0, 0.05);
   border-radius: 20px;
   padding: 166px 45px;
 }
-.wrapper .works .card .ellipse-bottom {
+.wrapper .container .card .ellipse-bottom {
   left: 317.3px;
 }
-.wrapper .works .card .ellipse-top {
+.wrapper .container .card .ellipse-top {
   left: 320.42px;
+}
+.wrapper .container .card img {
+  width: 100%;
+  border-radius: 20px;
+}
+.wrapper #cadre .ellipse-bottom {
+  top: 470px;
+}
+.wrapper #cadre .ellipse-top {
+  top: 410px;
+}
+.wrapper #finance .ellipse-bottom {
+  left: -330px;
+}
+.wrapper #finance .ellipse-top {
+  left: -270px;
+}
+.wrapper #it .ellipse-bottom {
+  top: 220px;
+}
+.wrapper #it .ellipse-top {
+  top: 160px;
+  left: 185px;
+}
+.wrapper #pr .ellipse-bottom {
+  top: 210px;
+  left: -280px;
+}
+.wrapper #pr .ellipse-top {
+  top: 160px;
+  left: -390px;
 }
 .wrapper .ellipse-bottom {
   left: -171px;
@@ -200,6 +269,99 @@ body {
 .wrapper .ellipse-top {
   left: -116px;
   top: -261px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(242, 248, 242, 0.5);
+  padding: 80px 150px 100px 150px;
+}
+.footer .simpleInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .simpleInfo .footerTitle {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  color: #263238;
+  margin-bottom: 25px;
+}
+.footer .simpleInfo .footerTagline {
+  width: 352px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #263238;
+}
+.footer .contactUs {
+  display: flex;
+  flex-direction: column;
+}
+.footer .contactUs .contactUsItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.footer .contactUs .contactUsItem .contactTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #263238;
+  margin-bottom: 15px;
+}
+.footer .contactUs .contactUsItem .contactItem {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #263238;
+  text-decoration: none;
+}
+
+.darkMode {
+  background-color: #263238;
+}
+.darkMode .header .logo {
+  color: #FFFFFF;
+}
+.darkMode .header .link .scroll {
+  color: #FFFFFF;
+}
+.darkMode .title {
+  color: #FFFFFF;
+}
+.darkMode .tagline {
+  color: #FFFFFF;
+}
+.darkMode .input {
+  background: #FFFFFF;
+}
+.darkMode .wrapper .container .info .powers .powersItem .icon {
+  background: rgba(0, 128, 0, 0.1);
+}
+.darkMode .wrapper .container .info .powers .powersItem .description {
+  color: #FFFFFF;
+}
+.darkMode .wrapper .container .card {
+  background: rgba(255, 255, 255, 0.05);
+}
+.darkMode .footer {
+  background: rgba(53, 64, 70, 0.5);
+}
+.darkMode .footer .simpleInfo .footerTitle {
+  color: #FFFFFF;
+}
+.darkMode .footer .simpleInfo .footerTagline {
+  color: #FFFFFF;
+}
+.darkMode .footer .contactUs .contactUsItem .contactTitle {
+  color: #FFFFFF;
+}
+.darkMode .footer .contactUs .contactUsItem .contactItem {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -113,10 +113,10 @@ body {
   line-height: 70px;
   color: $text-light;
   margin-bottom: 70px;
+}
 
-  .selection {
-    color: $green;
-  }
+.selection {
+  color: $green;
 }
 
 .tagline {
@@ -180,10 +180,11 @@ body {
     }
   }
 
-  .works {
+  .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
 
     .info {
       width: 574px;
@@ -194,12 +195,54 @@ body {
       .title {
         text-align: start;
       }
+
+      .tagline {
+        margin-bottom: 25px;
+      }
+
+      .powers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .powersItem {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 490px;
+          margin-bottom: 48px;
+
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: $greenItem;
+            margin-right: 35px;
+
+            img {
+              width: 54px;
+              height: 54px;
+            }
+          }
+
+          .description {
+            width: 335px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: $text-light;
+          }
+        }
+      }
     }
 
     .card {
       position: relative;
       overflow: hidden;
-      background: rgba(0, 128, 0, 0.05);
+      background: $card-light;
       border-radius: 20px;
       padding: 166px 45px;
 
@@ -210,6 +253,54 @@ body {
       .ellipse-top {
         left: 320.42px;
       }
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  #cadre {
+    .ellipse-bottom {
+      top: 470px;
+    }
+
+    .ellipse-top {
+      top: 410px;
+    }
+  }
+
+  #finance {
+    .ellipse-bottom {
+      left: -330px;
+    }
+
+    .ellipse-top {
+      left: -270px;
+    }
+  }
+
+  #it {
+    .ellipse-bottom {
+      top: 220px;
+    }
+
+    .ellipse-top {
+      top: 160px;
+      left: 185px;
+    }
+  }
+
+  #pr {
+    .ellipse-bottom {
+      top: 210px;
+      left: -280px
+    }
+
+    .ellipse-top {
+      top: 160px;
+      left: -390px;
     }
   }
 
@@ -221,5 +312,137 @@ body {
   .ellipse-top {
     left: -116px;
     top: -261px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $footer-light;
+  padding: 80px 150px 100px 150px;
+
+  .simpleInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .footerTitle {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 25px;
+      color: $text-light;
+      margin-bottom: 25px;
+    }
+
+    .footerTagline {
+      width: 352px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
+      color: $text-light;
+    }
+  }
+
+  .contactUs {
+    display: flex;
+    flex-direction: column;
+
+    .contactUsItem {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+
+      .contactTitle {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: $text-light;
+        margin-bottom: 15px;
+      }
+
+      .contactItem {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-light;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.darkMode {
+  background-color: $bg-dark;
+
+  .header {
+    .logo {
+      color: $text-dark;
+    }
+
+    .link {
+      .scroll {
+        color: $text-dark;
+      }
+    }
+  }
+
+  .title {
+    color: $text-dark;
+  }
+
+  .tagline {
+    color: $text-dark;
+  }
+
+  .input {
+    background: $text-dark;
+  }
+
+  .wrapper {
+    .container {
+      .info {
+        .powers {
+          .powersItem {
+            .icon {
+              background: $greenItem-dark;
+            }
+            .description {
+              color: $text-dark;
+            }
+          }
+        }
+      }
+
+      .card {
+        background: $card-dark;
+      }
+    }
+  }
+
+  .footer {
+    background: $footer-dark;
+
+    .simpleInfo {
+      .footerTitle {
+        color: $text-dark;
+      }
+
+      .footerTagline {
+        color: $text-dark;
+      }
+    }
+
+    .contactUs {
+      .contactUsItem {
+        .contactTitle {
+          color: $text-dark;
+        }
+
+        .contactItem {
+          color: $text-dark;
+        }
+      }
+    }
   }
 }

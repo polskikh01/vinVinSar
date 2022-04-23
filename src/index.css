@@ -96,6 +96,10 @@ body {
 .header .mode {
   cursor: pointer;
 }
+.header img {
+  width: 32px;
+  height: 32px;
+}
 
 .title {
   text-align: center;
@@ -218,6 +222,9 @@ body {
   line-height: 32px;
   color: #263238;
 }
+.wrapper .container #ref {
+  justify-content: flex-end;
+}
 .wrapper .container .card {
   position: relative;
   overflow: hidden;
@@ -240,6 +247,20 @@ body {
 }
 .wrapper #cadre .ellipse-top {
   top: 410px;
+}
+.wrapper #finance {
+  flex-direction: column;
+}
+.wrapper #finance .title {
+  text-align: start;
+}
+.wrapper #finance .tagline {
+  margin-bottom: 25px;
+}
+.wrapper #finance .distribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .wrapper #finance .ellipse-bottom {
   left: -330px;

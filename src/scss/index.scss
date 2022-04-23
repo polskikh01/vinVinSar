@@ -104,6 +104,11 @@ body {
   .mode {
     cursor: pointer;
   }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .title {
@@ -239,6 +244,10 @@ body {
       }
     }
 
+    #ref {
+      justify-content: flex-end;
+    }
+
     .card {
       position: relative;
       overflow: hidden;
@@ -272,12 +281,20 @@ body {
   }
 
   #finance {
-    .ellipse-bottom {
-      left: -330px;
+    flex-direction: column;
+
+    .title {
+      text-align: start;
     }
 
-    .ellipse-top {
-      left: -270px;
+    .tagline {
+      margin-bottom: 25px;
+    }
+
+    .distribution {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 

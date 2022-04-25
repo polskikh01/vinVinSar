@@ -424,6 +424,7 @@ body {
             .icon {
               background: $greenItem-dark;
             }
+
             .description {
               color: $text-dark;
             }
@@ -459,6 +460,382 @@ body {
         .contactItem {
           color: $text-dark;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .wrapper {
+    padding: 0 150px;
+
+    .container {
+      .info {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .header {
+    padding: 50px 50px 0 50px;
+  }
+
+  .wrapper {
+    padding: 0 50px;
+
+    .container {
+      justify-content: center;
+      align-items: center;
+
+      .info {
+        width: auto;
+        align-items: center;
+
+        .title {
+          margin-bottom: 50px;
+        }
+
+        .powers {
+          .powersItem {
+            width: auto;
+          }
+        }
+      }
+
+      .card {
+        display: none;
+      }
+    }
+  }
+
+  .footer {
+    padding: 80px 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    padding: 20px 40px 0 40px;
+
+    .nav {
+      display: none;
+    }
+  }
+
+  .title {
+    margin-bottom: 25px;
+  }
+
+  .wrapper {
+    padding: 0 40px;
+
+    .container {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      .info {
+        align-items: center;
+        width: auto;
+
+        .title {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        .tagline {
+          text-align: center;
+        }
+      }
+
+      .card {
+        display: none;
+      }
+    }
+
+    #finance {
+      .title {
+        text-align: center;
+      }
+
+      .distribution {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .footer {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 765px) {
+  .ellipse {
+    width: 255px;
+    height: 255px;
+  }
+
+  .header {
+    padding: 20px 40px 0 40px;
+
+    .nav {
+      display: none;
+    }
+  }
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .tagline {
+    line-height: 26px;
+  }
+
+  .iconFilling {
+    display: none;
+  }
+
+  .input {
+    width: 360px;
+    height: 50px;
+  }
+
+  .wrapper {
+    padding: 0 30px;
+
+    .ellipse-bottom {
+      left: -60px;
+      top: -140px;
+    }
+
+    .ellipse-top {
+      left: -45px;
+      top: -160px;
+    }
+
+    .about {
+      padding: 70px 0;
+
+      .tagline {
+        width: auto;
+      }
+
+      .getStart {
+        .button {
+          padding: 10px 15px;
+        }
+      }
+    }
+
+    .container {
+      margin-bottom: 50px;
+
+      .info {
+        width: auto;
+
+        .title {
+          text-align: center;
+        }
+
+        .tagline {
+          text-align: center;
+        }
+
+        .powers {
+          .powersItem {
+            width: auto;
+            display: grid;
+            grid-template: ". .";
+
+            .icon {
+              width: 60px;
+              height: 60px;
+
+              img {
+                width: 36px;
+                height: 36px;
+              }
+            }
+
+            .description {
+              width: auto;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .card {
+        display: none;
+      }
+    }
+
+    #finance {
+      .title {
+        text-align: center;
+      }
+
+      .tagline {
+        text-align: center;
+      }
+
+      .distribution {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 35px;
+
+    .simpleInfo {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .ellipse {
+    width: 255px;
+    height: 255px;
+  }
+
+  .header {
+    padding: 20px 20px 0 20px;
+
+    .logo {
+      font-size: 26px;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .nav {
+      display: none;
+    }
+  }
+
+  .title {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .tagline {
+    line-height: 26px;
+  }
+
+  .iconFilling {
+    display: none;
+  }
+
+  .input {
+    width: 300px;
+    height: 50px;
+  }
+
+  .wrapper {
+    padding: 0 10px;
+
+    .ellipse-bottom {
+      left: -60px;
+      top: -140px;
+    }
+
+    .ellipse-top {
+      left: -45px;
+      top: -160px;
+    }
+
+    .about {
+      padding: 70px 0;
+
+      .tagline {
+        width: auto;
+      }
+
+      .getStart {
+        .button {
+          padding: 10px 15px;
+        }
+      }
+    }
+
+    .container {
+      margin-bottom: 50px;
+
+      .info {
+        width: auto;
+
+        .title {
+          text-align: center;
+        }
+
+        .tagline {
+          text-align: center;
+        }
+
+        .powers {
+          .powersItem {
+            width: auto;
+            display: grid;
+            grid-template: ". .";
+
+            .icon {
+              width: 60px;
+              height: 60px;
+
+              img {
+                width: 36px;
+                height: 36px;
+              }
+            }
+
+            .description {
+              width: auto;
+              font-size: 15px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+
+      .card {
+        display: none;
+      }
+    }
+
+    #finance {
+      .title {
+        text-align: center;
+      }
+
+      .tagline {
+        text-align: center;
+      }
+
+      .distribution {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 35px;
+
+    .simpleInfo {
+      margin-bottom: 25px;
+
+      .footerTagline {
+        width: auto;
       }
     }
   }

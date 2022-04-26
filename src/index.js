@@ -8,6 +8,8 @@ const iconTheme = () => {
     body.className === '' ? allIcon.forEach(i => i.setAttribute('src', i.currentSrc.replace('dark', 'light'))) : allIcon.forEach(i => i.setAttribute('src', i.currentSrc.replace('light', 'dark')));
 }
 
+localStorage.setItem('theme', '')
+
 const lm = () => {
     body.classList.remove('darkMode');
     allIcon.forEach(i => i.setAttribute('src', i.currentSrc.replace('dark', 'light')));

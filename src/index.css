@@ -50,12 +50,12 @@ body {
 
 #borderEllipse {
   left: 29%;
-  top: 767px;
+  top: 600px;
 }
 
 #borderStar {
   left: 77%;
-  top: 776px;
+  top: 660px;
 }
 
 .header {
@@ -159,11 +159,10 @@ body {
 .wrapper .about .tagline {
   width: 725px;
   text-align: center;
-  margin-bottom: 48px;
 }
 .wrapper .about .getStart {
+  display: none;
   position: relative;
-  display: flex;
   align-items: center;
 }
 .wrapper .about .getStart .button {
@@ -221,9 +220,6 @@ body {
   font-size: 18px;
   line-height: 32px;
   color: #263238;
-}
-.wrapper .container #ref {
-  justify-content: flex-end;
 }
 .wrapper .container .card {
   position: relative;
@@ -406,11 +402,19 @@ body {
   .wrapper .container .info .title {
     margin-bottom: 50px;
   }
+  .wrapper .container .info .powers {
+    display: grid;
+    grid-template: ". .";
+    gap: 25px;
+  }
   .wrapper .container .info .powers .powersItem {
     width: auto;
   }
   .wrapper .container .card {
     display: none;
+  }
+  .wrapper #finance .distribution .info .powers {
+    display: flex;
   }
 
   .footer {
@@ -418,6 +422,18 @@ body {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  #ellipse {
+    top: 455px;
+  }
+
+  #star {
+    top: 385px;
+  }
+
+  .borderEllipse {
+    top: 540px;
+  }
+
   .header {
     padding: 20px 40px 0 40px;
   }
@@ -530,6 +546,7 @@ body {
     width: auto;
     display: grid;
     grid-template: ". .";
+    justify-content: start;
   }
   .wrapper .container .info .powers .powersItem .icon {
     width: 60px;
@@ -639,10 +656,12 @@ body {
     width: auto;
     display: grid;
     grid-template: ". .";
+    justify-content: start;
   }
   .wrapper .container .info .powers .powersItem .icon {
     width: 60px;
     height: 60px;
+    margin-right: 10px;
   }
   .wrapper .container .info .powers .powersItem .icon img {
     width: 36px;

@@ -52,12 +52,12 @@ body {
 
 #borderEllipse {
   left: 29%;
-  top: 767px;
+  top: 600px;
 }
 
 #borderStar {
   left: 77%;
-  top: 776px;
+  top: 660px;
 }
 
 .header {
@@ -169,12 +169,12 @@ body {
     .tagline {
       width: 725px;
       text-align: center;
-      margin-bottom: 48px;
+      //margin-bottom: 48px;
     }
 
     .getStart {
+      display: none;
       position: relative;
-      display: flex;
       align-items: center;
 
       .button {
@@ -242,10 +242,6 @@ body {
           }
         }
       }
-    }
-
-    #ref {
-      justify-content: flex-end;
     }
 
     .card {
@@ -498,6 +494,10 @@ body {
         }
 
         .powers {
+          display: grid;
+          grid-template: ". .";
+          gap: 25px;
+
           .powersItem {
             width: auto;
           }
@@ -508,6 +508,16 @@ body {
         display: none;
       }
     }
+
+    #finance {
+      .distribution {
+        .info {
+          .powers {
+            display: flex;
+          }
+        }
+      }
+    }
   }
 
   .footer {
@@ -516,6 +526,18 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  #ellipse {
+    top: 455px;
+  }
+
+  #star {
+    top: 385px;
+  }
+
+  .borderEllipse {
+    top: 540px;
+  }
+
   .header {
     padding: 20px 40px 0 40px;
 
@@ -650,6 +672,7 @@ body {
             width: auto;
             display: grid;
             grid-template: ". .";
+            justify-content: start;
 
             .icon {
               width: 60px;
@@ -787,10 +810,12 @@ body {
             width: auto;
             display: grid;
             grid-template: ". .";
+            justify-content: start;
 
             .icon {
               width: 60px;
               height: 60px;
+              margin-right: 10px;
 
               img {
                 width: 36px;

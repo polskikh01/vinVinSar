@@ -1,14 +1,12 @@
 const body = document.body;
 const darkMode = document.getElementById('darkMode');
 const allIcon = Array.from(document.querySelectorAll('img')).slice(0, 8);
-let theme = body.className === null ? '' : body.className;
+let theme;
 let setTheme;
 
 const iconTheme = () => {
     body.className === '' ? allIcon.forEach(i => i.setAttribute('src', i.currentSrc.replace('dark', 'light'))) : allIcon.forEach(i => i.setAttribute('src', i.currentSrc.replace('light', 'dark')));
 }
-
-localStorage.setItem('theme', '')
 
 const lm = () => {
     body.classList.remove('darkMode');
@@ -28,7 +26,7 @@ darkMode.addEventListener('click', () => {
     body.className === '' ? dm() : lm();
 })
 
-setTheme = localStorage.getItem('theme');
+setTheme = localStorage.getItem('theme') === null ? '' : localStorage.getItem('theme');
 body.classList.add(String(setTheme));
 
 iconTheme();

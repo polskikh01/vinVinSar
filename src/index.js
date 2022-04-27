@@ -28,7 +28,7 @@ window.onload = function() {
     })
 
     setTheme = localStorage.getItem('theme') === null ? '' : localStorage.getItem('theme');
-    body.classList.add(String(setTheme));
+    if (setTheme) {body.classList.add(String(setTheme))}
 
     iconTheme();
 }

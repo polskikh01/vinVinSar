@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "sass": "sass src/scss/index.scss src/index.css"
+    "sass": "sass src/scss/index.scss src/index.css",
+    "build": "mkdir build && minify ./src/index.html > ./build/index.min.html && minify ./src/index.css > ./build/index.min.css && minify ./src/index.js > ./build/index.min.js"
   },
   "repository": {
     "type": "git",

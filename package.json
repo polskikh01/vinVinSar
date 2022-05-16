@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "sass": "sass src/scss/index.scss src/index.css",
-    "build": "mkdir build && minify ./src/index.html > ./build/index.min.html && minify ./src/index.css > ./build/index.min.css && minify ./src/index.js > ./build/index.min.js"
+    "minify": "rm -rf build/ && mkdir build && minify ./src/index.html > ./build/index.html && minify ./src/index.css > ./build/index.min.css && minify ./src/index.js > ./build/index.min.js",
+    "build": "npm run sass && npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,9 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/polskikh01/vinVinSar/issues"
+  },
+  "dependencies": {
+    "minify": "^8.0.4",
+    "sass": "^1.51.0"
   }
 }

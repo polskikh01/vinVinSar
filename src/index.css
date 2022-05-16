@@ -375,7 +375,7 @@ body {
   color: #FFFFFF;
 }
 
-@media (min-width: 1440px) and (max-width: 1919px) {
+@media screen and (max-width: 1919px) {
   .wrapper {
     padding: 0 150px;
   }
@@ -383,7 +383,7 @@ body {
     margin: 0 20px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1380px) {
   .header {
     padding: 50px 50px 0 50px;
   }
@@ -421,7 +421,7 @@ body {
     padding: 80px 50px;
   }
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #ellipse {
     top: 455px;
   }
@@ -478,7 +478,7 @@ body {
     padding: 50px;
   }
 }
-@media (min-width: 425px) and (max-width: 765px) {
+@media screen and (min-width: 425px) and (max-width: 765px) {
   .ellipse {
     width: 255px;
     height: 255px;
@@ -581,7 +581,7 @@ body {
     margin-bottom: 25px;
   }
 }
-@media (min-width: 320px) and (max-width: 424px) {
+@media screen and (min-width: 240px) and (max-width: 424px) {
   .ellipse {
     width: 255px;
     height: 255px;
